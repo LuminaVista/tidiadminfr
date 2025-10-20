@@ -1,0 +1,159 @@
+body { 
+  height: 60vh;
+  overflow-x: hidden;
+}
+.row {
+  height: auto !important;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+.col-7, .col-5 {
+  flex: 0 0 auto;
+}
+
+.col-7 {
+  width: 60%;
+}
+
+.col-5 {
+  width: 38%;
+}
+
+.dashboard-title {
+  color:blue;
+  font-size: 2.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 auto;
+  flex: 1;
+}
+.logout-btn {
+  position: absolute;
+  right: 1rem;
+  top: 0;
+}
+.row { height: 82vh; display: flex; align-items: flex-start; justify-content: center; }
+.card { height: 65vh; display: flex; flex-direction: column; justify-content: flex-start; }
+.table-responsive { overflow-y: auto; max-height: 45vh; border: none !important; }
+.table { z-index:1; border: none !important; }
+.table th, .table td { border: none !important; }
+#chartContainer { 
+  height: 54vh; padding: 1rem; background: #fff; border-radius: 0.5rem; 
+  margin-bottom: 1rem; box-shadow: 0 2px 24px 0 rgba(0,0,0,0.05); 
+  display: flex; flex-direction: column; justify-content: flex-start; align-items: stretch;
+}
+.filter-btn-group {
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0rem;
+}
+
+.filter-btn-group .btn {
+  border-radius: 50px !important;  
+  padding: 0.35rem 1.2rem;         
+  font-weight: 500;               
+  transition: all 0.3s ease-in-out;
+}
+
+.filter-btn-group .btn:hover {
+  background-color: #007bff !important;
+  color: white !important;
+  transform: scale(1.05);
+}
+
+#downloadBtn { width: 100%; margin-top: .75rem; }
+.date-picker-topright {
+  position: relative;
+  top: 50px;
+  left: 1250px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  z-index:2;
+}
+.date-picker-topright input[type="date"] {
+  max-width: 150px;
+  min-width: 120px;
+}
+
+#signUpDayCount {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  justify-content: center;
+}
+
+#signUpDayCount .count {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #198754; 
+  line-height: 1;
+}
+
+#signUpDayCount .label {
+  font-size: 1.9rem; 
+  font-weight: 500;
+  color: black;
+}
+
+.card {
+  height: 62vh;
+  min-height: unset !important;
+}
+
+#chartContainer {
+  height: 60vh; 
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+.mb-3 {
+  margin-bottom: 1rem !important;
+}
+
+
+.card.p-2 {
+  position: relative;
+  height: 22vh;      
+  overflow: hidden; 
+}
+
+.card.p-2 #signUpDayPicker {
+  position: absolute;
+  top: 10px;    
+  right: 12px;  
+  width: 150px; 
+  height: 34px;
+  z-index: 5;   
+}
+
+.card.p-2 h6 {
+  margin-right: 180px; 
+}
+
+
+.card.p-2 .d-flex {
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.parent-container {
+  height:50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.col-md-7 {
+  height: auto !important;
+}
+
