@@ -8,7 +8,7 @@ async function fetchUsers() {
     return;
   }
 
-  const res = await fetch("/api/admin/getUsers", {
+  const res = await fetch("https://tidiadmin.tidibe.xyz/api/admin/getUsers", {
     headers: { Authorization: token },
   });
   if (!res.ok) {
@@ -245,7 +245,7 @@ function logout() {
     window.location.href = "login.html";
     return;
   }
-  fetch("/api/admin/logout", {
+  fetch("https://tidiadmin.tidibe.xyz/api/admin/logout", {
     method: "POST",
     headers: { Authorization: token },
   }).then(() => {
